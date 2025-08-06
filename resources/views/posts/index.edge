@@ -1,0 +1,8 @@
+<a href="/posts/create">Create Post</a>
+<ul>
+  @each(post in posts)
+    <li>
+      <a href="/posts/{{ post.id }}/edit">{{ post.title }}</a>
+    </li>
+  @endeach
+</ul>

@@ -1,0 +1,6 @@
+<form method="POST" action="/posts/{{ post.id }}?_method=PUT">
+  {{ csrfField() }}
+  <input name="title" value="{{ post.title }}" placeholder="Title" />
+  <textarea name="body" placeholder="Body">{{ post.body }}</textarea>
+  <button type="submit">Update</button>
+</form>

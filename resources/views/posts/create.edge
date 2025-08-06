@@ -1,0 +1,6 @@
+<form method="POST" action="/posts">
+  {{ csrfField() }}
+  <input name="title" placeholder="Title" />
+  <textarea name="body" placeholder="Body"></textarea>
+  <button type="submit">Publish</button>
+</form>
